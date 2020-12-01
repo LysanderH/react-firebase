@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+.completed {
+  color: grey;
+  text-decoration: line-through;
+  order: 1;
+}
+.remaining {
+  color: #333;
+  order: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo__list {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+html {
+  background-color: #e5e5f7;
+  background-image: linear-gradient(
+      30deg,
+      #444cf7 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #444cf7 87.5%,
+      #444cf7
+    ),
+    linear-gradient(
+      150deg,
+      #444cf7 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #444cf7 87.5%,
+      #444cf7
+    ),
+    linear-gradient(
+      30deg,
+      #444cf7 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #444cf7 87.5%,
+      #444cf7
+    ),
+    linear-gradient(
+      150deg,
+      #444cf7 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #444cf7 87.5%,
+      #444cf7
+    ),
+    linear-gradient(
+      60deg,
+      #444cf777 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #444cf777 75%,
+      #444cf777
+    ),
+    linear-gradient(
+      60deg,
+      #444cf777 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #444cf777 75%,
+      #444cf777
+    );
+  background-size: 40px 70px;
+  background-position: 0 0, 0 0, 20px 35px, 20px 35px, 0 0, 20px 35px;
+}
+body {
+  width: 80%;
+  min-height: 80vh;
+  margin: auto;
+  background-color: #fff;
+  padding: 50px;
+}
+.btn {
+  padding: 6px 12px;
+  border: none;
+  background-color: #b3b6ff;
+}
+.error {
+  color: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.form__input {
+  padding: 6px 12px;
+  font-family: Arial, Helvetica, sans-serif;
 }
